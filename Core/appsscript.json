@@ -3,15 +3,15 @@
   "runtimeVersion": "V8",
   "dependencies": {},
   "dataStudio": {
-    "name": "LinkedIn Core",
-    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png",
+    "name": "YouTube Core",
+    "logoUrl": "https://www.lansinoh.fr/wp-content/uploads/2020/09/youtube-logo-e1603271473394.jpg",
     "company": "Chiogros",
     "companyUrl": "https://github.com/Chiogros",
-    "addonUrl": "https://github.com/Chiogros/LinkedIn-connectors-for-GDataStudio/Core",
-    "supportUrl": "https://github.com/Chiogros/LinkedIn-connectors-for-GDataStudio/issues",
-    "description": "Core LinkedI connector, used by other connectors. Do not use it.",
+    "addonUrl": "https://github.com/Chiogros/YouTube-connectors-for-GDataStudio/tree/main/Core",
+    "supportUrl": "https://github.com/Chiogros/YouTube-connectors-for-GDataStudio/issues",
+    "description": "Core YouTube connector, used by other connectors. Do not use it.",
     "sources": [
-      "linkedin"
+      "youtube"
     ]
   }
 }

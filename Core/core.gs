@@ -1,9 +1,9 @@
 var cc = DataStudioApp.createCommunityConnector();
 
-function getSchema(request, rawFields, fieldsToRetrieve) {
+function getSchema(request, rawFields, endpoint, fields) {
 
   // Check credentials
-  checkForValidCredentials(fieldsToRetrieve, request);
+  checkForValidCredentials(endpoint, fields, request);
 
   // return fields to retrieve
   var fields = rawFields.build();
@@ -38,20 +38,9 @@ function getConfig() {
   return config.build();
 }
 
-function connect(fields, request) {
+function connect(endpoint, fields, request) {
+  var url = 'https://www.googleapis.com/youtube/v3/' + endpoint + '?' + 'id=' + request.configParams.channel_ID + '&key=' + request.configParams.api_key + '&part=' + fields.toString();
 
-  var httpResponses = new Array();
-  var numberOfFieldsToRetrieve = 50;
-  
-  // iterate over fields to retrieve because GDS has a limit URL size
-  for (var i = 0 ; i < fields.length ; i += numberOfFieldsToRetrieve) {
-
-    var url = 'https://graph.facebook.com/v11.0/' + request.configParams.object_ID + '?fields=' + fields.slice(i, i + numberOfFieldsToRetrieve) + '&access_token=' + request.configParams.bearer_token;
-
-    // Fetch data
-    var httpResponse = UrlFetchApp.fetch(url);
-    httpResponses.push(httpResponse);
-  }
-
-  return httpResponses;
+  // Fetch data
+  return UrlFetchApp.fetch(url);
 }

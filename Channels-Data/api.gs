@@ -1,5 +1,5 @@
 function fetchDataFromAPI(requestedFields, request) {
-  var rawRows = LinkedInCore.fetchDataFromAPI(request, fields);
+  var rawRows = YouTubeCore.fetchDataFromAPI(request, endpoint, fields);
   
   return responseToRows(requestedFields, rawRows);
 }

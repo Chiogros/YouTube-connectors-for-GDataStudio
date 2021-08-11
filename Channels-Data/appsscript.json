@@ -1,0 +1,26 @@
+{
+  "exceptionLogging": "NONE",
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "YouTubeCore",
+        "version": "0",
+        "libraryId": "1rTzmJuufiCu8Udx8kKza2C37Wrb-LR2-N58Wlly5AXNHAmive93_Gv26",
+        "developmentMode": true
+      }
+    ]
+  },
+  "dataStudio": {
+    "name": "YouTube Channels data",
+    "logoUrl": "https://www.lansinoh.fr/wp-content/uploads/2020/09/youtube-logo-e1603271473394.jpg",
+    "company": "Chiogros",
+    "companyUrl": "https://github.com/Chiogros",
+    "addonUrl": "https://github.com/Chiogros/YouTube-connectors-for-GDataStudio/tree/main/Channels-Data",
+    "supportUrl": "https://github.com/Chiogros/YouTube-connectors-for-GDataStudio/issues",
+    "description": "Get YouTube Channels data, for free.",
+    "sources": [
+      "youtube"
+    ]
+  }
+}
