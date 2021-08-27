@@ -57,7 +57,6 @@ var fields = ['brandingSettings','contentDetails','contentDetails','id', ...];
 ```
 
 3. Put fetchable fields from API
-They can be the same as the optionalFields you put before.
 ```javascript
 // fields.gs
 function getFields(request) {
