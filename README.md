@@ -37,7 +37,7 @@ Child connectors (like Channels-data) use Core functions and have functions spec
 
 ## Get access token
 1. Check [this video](https://www.youtube.com/embed/DvjnoTJe9NM?start=407&end=576)
-2. Use it to fill your connector credentials
+2. Use API key to fill your connector credentials
 
 ## How to create a new YouTube connector
 First, copy Channels-data connector as template.
