@@ -45,7 +45,7 @@ First, copy Channels-data connector as template.
 You can find the documentation [here](https://developers.google.com/youtube/v3/docs).
 
 Then you have 4 things to change:
-1. Change `endpoint` and `fields` global vars to the GET method you want.
+1. Change `endpoint` global var to the GET method you want.
 ```javascript
 // core.gs
 var endpoint = 'channels';
